@@ -3,3 +3,12 @@
 CREATE TABLE animals (
     name varchar(100)
 );
+
+CREATE TABLE animals ( 
+    id SERIAL PRIMARY KEY, 
+    name VARCHAR, 
+    date_of_birth DATE, 
+    escape_attempts INTEGER, 
+    neutered BOOLEAN, 
+    weight_kg DECIMAL(10, 2) 
+);
