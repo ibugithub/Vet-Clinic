@@ -122,7 +122,7 @@ ORDER BY animals_count Desc LIMIT 1;
 
 
 
--- schema from join table for visits
+-- query from join table for visits
 SELECT vets.name AS vet_name, animals.name AS animal_name 
 FROM visits
 JOIN animals ON animals.id = visits.animal_id
@@ -174,7 +174,8 @@ SELECT vets.name AS recent_visited_vet, animals.name AS recent_visit_animal, vis
 FROM animals 
 JOIN visits ON animals.id = visits.animal_id
 JOIN vets ON vets.id = visits.vet_id
-ORDER BY visits.date;
+ORDER BY visits.date
+LIMIT 1;
 
 
 SELECT COUNT(*) AS num_visits_without_specialization
