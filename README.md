@@ -57,11 +57,6 @@
 - [ ] **[Querying information from the database]**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-  - [will be uploaded soon]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
