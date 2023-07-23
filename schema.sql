@@ -59,5 +59,5 @@ CREATE TABLE visits (
     id SERIAL PRIMARY KEY,
     animal_id INTEGER REFERENCES animals(id),
     vet_id INTEGER REFERENCES vets(id),
-    date DATE
+    date_of_visit DATE
 );

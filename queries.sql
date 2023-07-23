@@ -128,7 +128,7 @@ FROM visits
 JOIN animals ON animals.id = visits.animal_id
 JOIN vets ON vets.id = visits.vet_id
 WHERE vets.name = 'William Tatcher'
-ORDER BY visits.date DESC
+ORDER BY vistits.date_of_visit DESC
 LIMIT 1;
 
 
@@ -149,7 +149,7 @@ SELECT vets.name AS vet_name, animals.name AS animal_name
 FROM animals
 JOIN visits ON animals.id = visits.animal_id
 JOIN vets ON vets.id = visits.vet_id
-WHERE (vets.name = 'Stephanie Mendez') AND (visits.date BETWEEN '2020-04-01' AND '2020-08-01');
+WHERE (vets.name = 'Stephanie Mendez') AND (vistits.date_of_visit BETWEEN '2020-04-01' AND '2020-08-01');
 
 
 
@@ -166,15 +166,15 @@ FROM animals
 JOIN visits ON animals.id = visits.animal_id
 JOIN vets ON vets.id = visits.vet_id
 WHERE vets.name = 'Maisy Smith' 
-ORDER BY visits.date
+ORDER BY vistits.date_of_visit
 LIMIT 1;
 
 
-SELECT vets.name AS recent_visited_vet, animals.name AS recent_visit_animal, visits.date AS date 
+SELECT vets.name AS recent_visited_vet, animals.name AS recent_visit_animal, vistits.date_of_visit AS date 
 FROM animals 
 JOIN visits ON animals.id = visits.animal_id
 JOIN vets ON vets.id = visits.vet_id
-ORDER BY visits.date
+ORDER BY vistits.date_of_visit
 LIMIT 1;
 
 
