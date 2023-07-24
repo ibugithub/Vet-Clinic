@@ -61,3 +61,12 @@ CREATE TABLE visits (
     vet_id INTEGER REFERENCES vets(id),
     date_of_visit DATE
 );
+
+
+-- Query for week2 database optimizations:
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+CREATE INDEX ON visits (animal_id);
+CREATE INDEX ON visits (vet_id);
+CREATE INDEX ON owners (email);
+
