@@ -1,7 +1,7 @@
 # Vet clinic database
 <br>
 <div align='center'>
-	<h1>database performance audit</h1>
+	<h1>Sql from the diagram</h1>
   </div>
 <a name="readme-top"></a>
 
@@ -22,7 +22,7 @@
 
 # 📖  database performance audit! <a name="about-project"></a>
 
-**database performance audit** For this milestone of our project, We have a chance to optimize some slow queries in our vet-clinic database.
+**Sql from the diagram ** For this milestone of our project, We have created the schema_based_on_diagram.sql file based on the above diagram.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -39,6 +39,7 @@
 - Vet clinic database: Create a database based on a diagram
 - Vet clinic database: Decode Morse message
 - Vet clinic database: Create our own Enumerable
+  
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
